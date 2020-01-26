@@ -14,4 +14,7 @@ example = Knoten \x ->(x > 4)
 countInnerNodes:: BinTree a b -> Int
 countInnerNodes (Blatt b) = 0
 countInnerNodes (Knoten n a m) = 1 + countInnerNodes n + countInnerNodes m
+
+--d)-----------------------------------------------
+decodeInt:: BinTree (Int -> Bool) b -> Int -> b	 
 			 
